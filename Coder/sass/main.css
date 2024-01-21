@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Newsreader", serif;
+  font-size: 20px;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px;
+  font-size: 40px;
+}
+
+h2 {
+  text-align: center;
+  padding: 40px;
+  margin: 10px;
+}
+
+.header_index {
+  background-color: #a0a0a0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+  padding: 5px 10;
+}
+.header_index .Logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+.header_index .Logo img {
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+.header_index .Logo img:hover {
+  transform: scale(1.2);
+}
+.header_index .nav-link {
+  list-style: none;
+}
+.header_index .nav-link li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.header_index .nav-link li:hover {
+  transform: scale(1.1);
+}
+.header_index .nav-link li a {
+  font-size: 600;
+  color: white;
+  text-decoration: none;
+}
+.header_index .nav-link li a:hover {
+  color: black;
+}
+.header_index .btn {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-weight: 600;
+  color: white;
+  background: #426B1F;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.header_index .btn:hover {
+  background-color: #426B1F;
+  color: black;
+  transform: scale(1.1);
+}
+
+.slider-box {
+  width: 1000px;
+  height: 200px;
+  margin: 50px 45%;
+  overflow: hidden;
+}
+.slider-box ul {
+  display: flex;
+  padding: 0px;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-box li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+footer {
+  position: static;
+  bottom: 0px;
+  width: 100%;
+  background: #a0a0a0;
+}
+
+.main-container {
+  display: flex;
+}
+.main-container .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.main-container .content {
+  margin: 20px 0 0 0;
+}
+.main-container .social {
+  margin: 20px 0 0 0;
+}
+.main-container .social a {
+  padding: 0 2px;
+}
+.main-container .social a span {
+  height: 40px;
+  width: 40px;
+  background: #a0a0a0;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.main-container .social a span:hover {
+  background: #426B1F;
+}
+
+.footer_2 {
+  text-align: center;
+}
+
+.body_Sesion {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(150deg, #6c3483, #58D68D);
+  height: 100vh;
+}
+
+.Formulario {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+}
+.Formulario h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+}
+.Formulario form {
+  padding: 0 40px;
+  box-sizing: border-box;
+  /* Animacion Inicio de Sesion */
+}
+.Formulario form .username {
+  position: relative;
+  border-bottom: 2px solid silver;
+  margin: 30px 0;
+}
+.Formulario form .username input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.Formulario form .username label {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+}
+.Formulario form input[type=submit] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #58D68D;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+.Formulario form .Recordar {
+  margin: -5px 0 20px 5px;
+  color: blue;
+  cursor: pointer;
+}
+.Formulario form .Registrarse {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
+.Formulario form .Registrarse a {
+  color: blue;
+  text-decoration: none;
+}
+.Formulario form .username span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #6c3483;
+  transition: 0.5s;
+}
+.Formulario form .username input:focus ~ label,
+.Formulario form .username input:focus ~ label {
+  top: -5px;
+  color: #6c3483;
+}
+.Formulario form .username input:focus ~ span::before,
+.Formulario form .username input:focus ~ span::before {
+  width: 100%;
+}
+
+.main_Vacunas p {
+  text-align: center;
+}
+.main_Vacunas img {
+  padding: 50px;
+  margin-left: 25%;
+}
+
+.main_coberturas {
+  padding: 30px;
+}
+.main_coberturas h1,
+.main_coberturas h2 {
+  text-align: center;
+}
+.main_coberturas h4 {
+  text-align: justify;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.main_coberturas img {
+  width: 150px;
+  height: 150px;
+  float: right;
+  padding: 5px;
+  clear: both;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.main_Hospitales {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.Tabla_Hospitales {
+  width: 90%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.Tabla_Hospitales h2 {
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 75px;
+}
+.Tabla_Hospitales tr,
+.Tabla_Hospitales td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.main_Nosotros h1 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.main_Nosotros p {
+  text-align: center;
+  padding: 100px;
+}
+.main_Nosotros img {
+  margin-left: 35%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 400px;
+  width: 500px;
+}
+
+.contenedor {
+  display: flex;
+  margin-right: 500px;
+  text-align: justify;
+}
+.contenedor .texto-perfil {
+  align-self: center;
+}
+.contenedor .foto_equipo {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+.contenedor .sponsors {
+  width: 90%;
+  height: 90%;
+  margin-left: 100px;
+}
+
+@media (max-width: 420px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .main-container .left,
+  .main-container .right,
+  .main-container .center {
+    width: 100%;
+  }
+  h1,
+  h2 {
+    text-align: center;
+  }
+  .slider-box {
+    width: 100%;
+    margin: 0;
+  }
+  .header_index {
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+  }
+  .header_index .Logo {
+    padding-left: 30%;
+  }
+  .header_index .nav-link {
+    padding-right: 100px;
+    margin-left: 100px;
+    text-align: center;
+  }
+  .header_index .nav-link li {
+    margin-bottom: 10px;
+  }
+  .Tabla_Hospitales {
+    font-size: small;
+  }
+  .main_Nosotros img {
+    width: 50px;
+    height: 75px;
+  }
+  .main_Nosotros p {
+    text-align: justify;
+  }
+  .sponsors img{
+    width: 75%;
+    height: 80%;
+    margin-left: 15%;
+  }
+  .main_Vacunas img {
+    width: 100%;
+    margin-left: -10px;
+  }
+  .main_coberturas h4{
+    font-size: 15px;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .header_index .nav-link{
+    margin-bottom: 0;
+  }
+  .header_index a{
+    margin-bottom: 625px;
+  }
+  .main-container .left, .main-container .right, .main-container .center {
+    width: 100%;
+  }
+  .main-container h1, .main-container h2 {
+    text-align: center;
+  }
+  .main-container .slider-box {
+    margin: 50px 20% 50px;
+    width: 75%;
+  }
+  .main-container .header_index {
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+  }
+  .main-container .header_index .Logo {
+    padding-left: 30%;
+  }
+  .main-container .header_index .nav-link {
+    padding-right: 100px;
+    margin-left: 100px;
+    text-align: center;
+  }
+  .main-container .header_index .nav-link li {
+    margin-bottom: 10px;
+  }
+  .main-container .header_index .Tabla_Hospitales {
+    font-size: small;
+  }
+  .main-container .header_index .main_Nosotros img {
+    width: 50px;
+    height: 75px;
+  }
+  .main-container .header_index .main_Nosotros p {
+    text-align: justify;
+  }
+  .main-container .header_index .main_Vacunas img {
+    width: 100%;
+    height: 100%;
+    margin-right: 50px;
+  }
+  .main-container .header_index .main_coberturas {
+    font-size: 15px;
+  }
+}
+@media (min-width: 420px) and (max-width: 900px) {
+  .header_index {
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+  }
+  .header_index .Logo {
+    padding-left: 40%;
+  }
+  .header_index .nav-link {
+    margin-top: 10px;
+    padding-right: 100px;
+    margin-left: 130px;
+    text-align: center;
+  }
+  .header_index .nav-link li {
+    margin-bottom: 20px;
+  }
+  .header_index .main_Vacunas img {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 150px;
+  }
+  .header_index #inicio_sesion {
+    margin-left: 50px;
+  }
+  .header_index .main_Nosotros img {
+    width: 80%;
+    height: 80%;
+    margin-left: 50px;
+  }
+  .header_index .nav-link{
+    margin-bottom: 40px;
+  }
+  .header_index a{
+    margin-bottom: 575px;
+  }
+  .main_Nosotros img{
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+  }
+  .main_coberturas h4{
+    font-size: 15px;
+  }
+  .header_index .sponsors {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    margin-left: 50px;
+  }
+  .header_index .main_Vacunas img {
+    width: 100%;
+  }
+  .header_index .main_Vacunas p {
+    text-align: justify;
+  }
+  .main_Vacunas img {
+    width: 100%;
+    margin-left: -10px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .main-container .left, .main-container .right, .main-container .center {
+    width: 100%;
+  }
+  .main-container h1, .main-container h2 {
+    text-align: center;
+  }
+  .main-container .slider-box {
+    margin: 50px 20% 50px;
+    width: 70%;
+  }
+}/*# sourceMappingURL=main.css.map */
